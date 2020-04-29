@@ -8,10 +8,22 @@ import{GlobSerService} from './glob-ser.service';
 })
 export class AppComponent  {
   name = 'Angular';
-  datadariglob = '';
-  constructor (public variabelglobal : GlobSerService){
-    this.datadariglob = this.variabelglobal.setData("aku");
-    this.datadariglob = this.variabelglobal.getData();
-  }
+  datadariglob : any;
+ // datadariglob = '';
+ // datahtml : String;
+ // constructor (public variabelglobal : GlobSerService){
+
+ //   this.datadariglob = this.variabelglobal.getData();
+ // }
+
+//ubahdata(){
+ // this.variabelglobal.setData(this.datahtml);
+ // this.datahtml = "";
+ //  this.datadariglob = this.variabelglobal.getData();
+//}
+constructor (public variabelglobal : GlobSerService){
+  this.datadariglob = this.variabelglobal.getData();
+  console.log(this.datadariglob);
+}
 
 }

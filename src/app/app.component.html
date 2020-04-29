@@ -2,4 +2,13 @@
 
 <div>
   {{datadariglob}}
+
+ <input [(ngModel)] = "datahtml" type="text"/>
+
+<button (click) = "ubahdata()">data</button>
 </div>
+
+
+<div *ngFor = "let isidata of datadariglob">
+{{isidata.isid}}
+  </div>
