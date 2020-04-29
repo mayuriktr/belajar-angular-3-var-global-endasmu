@@ -10,6 +10,7 @@ export class AppComponent  {
   name = 'Angular';
   datadariglob = '';
   constructor (public variabelglobal : GlobSerService){
+    this.datadariglob = this.variabelglobal.setData("aku");
     this.datadariglob = this.variabelglobal.getData();
   }
 
