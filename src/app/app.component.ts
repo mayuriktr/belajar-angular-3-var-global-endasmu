@@ -9,6 +9,10 @@ import{GlobSerService} from './glob-ser.service';
 export class AppComponent  {
   name = 'Angular';
   datadariglob : any;
+
+  dno : '';
+  ddes : '';
+  datatambah :any;
  // datadariglob = '';
  // datahtml : String;
  // constructor (public variabelglobal : GlobSerService){
@@ -21,9 +25,12 @@ export class AppComponent  {
  // this.datahtml = "";
  //  this.datadariglob = this.variabelglobal.getData();
 //}
-constructor (public variabelglobal : GlobSerService){
-  this.datadariglob = this.variabelglobal.getData();
-  console.log(this.datadariglob);
-}
+
+
+//constructor (public variabelglobal : GlobSerService){
+  //this.datadariglob = this.variabelglobal.getData();
+ // console.log(this.datadariglob);
+//}
+
 
 }
